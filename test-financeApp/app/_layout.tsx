@@ -10,9 +10,7 @@ export const unstable_settings = {
 };
 
 export default function RootLayout() {
-  //const colorScheme = useColorScheme();
-  //↑too dark on my device
-   const colorScheme = "light";
+  const colorScheme = useColorScheme();
 
   return (
     <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>

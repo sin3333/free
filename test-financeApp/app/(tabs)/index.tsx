@@ -1,4 +1,3 @@
-import { CsvDemo } from '@/components/CsvDemo';
 import { Image } from 'expo-image';
 import { Platform, StyleSheet } from 'react-native';
 
@@ -19,7 +18,7 @@ export default function HomeScreen() {
         />
       }>
       <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title">Hello, Musashi!!!!?????</ThemedText>
+        <ThemedText type="title">Welcome!</ThemedText>
         <HelloWave />
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
@@ -75,9 +74,6 @@ export default function HomeScreen() {
           <ThemedText type="defaultSemiBold">app-example</ThemedText>.
         </ThemedText>
       </ThemedView>
-      <ThemedView style={styles.stepContainer}>
-  <CsvDemo />
-</ThemedView>
     </ParallaxScrollView>
   );
 }
@@ -99,33 +95,4 @@ const styles = StyleSheet.create({
     left: 0,
     position: 'absolute',
   },
-
-
-
-
 });
-
-export const modalStyles = StyleSheet.create({
-
-/*use in app/test/test1.tsx*/
- 
-  
-    screen: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  popup: {
-    width: '80%',
-    padding: 20,
-    borderRadius: 16,
-    backgroundColor: 'white',
-    gap: 8,
-  },
-  backdrop: {
-    flex: 1,
-    backgroundColor: 'rgba(0,0,0,0.4)',
-    justifyContent: 'center',
-    alignItems: "center",
-  },
-})
